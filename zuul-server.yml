@@ -1,0 +1,53 @@
+#spring.cloud.config.uri: http://localhost:8083
+#management.endpoints.web.exposure.include: *
+
+server:
+  port: 8765
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+
+zuul:
+  routes:
+    auth-service:
+      path: /auth/**
+      service-id: auth-service
+      strip-prefix: false
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+
+    users-service:
+      path: /users/**
+      service-id: users-service
+      strip-prefix: false
+
+    mail-service:
+      path: /mail-service/**
+      service-id: mail-service
+
+    projects-service:
+      path: /projects-service/**
+      service-id: projects-service
+
+    notifications-service:
+      path: /notifications-service/**
+      service-id: notifications-service
+
+    upload-files-service:
+      path: /upload-files/**
+      service-id: upload-files-service
+
+    profiles-service:
+      path: /profiles-service/**
+      service-id: profiles-service
+
+    resources-service:
+      path: /resources-service/**
+      service-id: resources-service
+
+# ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+# Access-Control-Allow-Origin: *
