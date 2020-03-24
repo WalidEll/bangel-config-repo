@@ -36,14 +36,14 @@ eureka:
 from: beangel.norsys.afrique@gmail.com
 
 CORDIALEMENT: "\n\n Cordialement\n---------------------------------------------------------------------\n"
-LIEN_APPLICATION: "\nAcc\u00E9s \u00E0 l'application   http://localhost:4444"
+LIEN_APPLICATION: "\nAccés à l'application   http://localhost:4444"
 
 # ressource mail properties
-RECUPERATION_MOTDEPASSE_SUBJECT: "R�cuperation de mot de passe"
-RECUPERATION_MOTDEPASSE_CONTENT: "Bonjour ,\n\nSuite \u00E0 votre demande, une reg\u00E9n\u00E9ration de votre mot de passe pour l'acc\u00E8s au syst\u00E8me d\u2019information Norsys Afrique s'est effectu\u00E9e avec succ\u00E9s. \nVotre nouveau mot de passe \t : " 
+RECUPERATION_MOTDEPASSE_SUBJECT: "Récuperation de mot de passe"
+RECUPERATION_MOTDEPASSE_CONTENT: "Bonjour ,\n\nSuite à votre demande, une regénération de votre mot de passe pour l'accès au système d’information Norsys Afrique s'est effectuée avec succés. \nVotre nouveau mot de passe \t : " 
 
-CREATION_COMPTE_SUBJECT: "Cr�ation de compte Bangel"
-CREATION_COMPTE_CONTENT: "Bonjour,\n\nUn compte vous a \u00E9t\u00E9 cr\u00E9\u00E9 sur le syst\u00E8me d\u2019information de Bangel. \nVeuilliez confirmer votre inscription : "
+CREATION_COMPTE_SUBJECT: "Création de compte Bangel"
+CREATION_COMPTE_CONTENT: "Bonjour,\n\nUn compte vous a été créé sur le système d’information de Bangel. \nVeuillez confirmer votre inscription : "
 
 
 
