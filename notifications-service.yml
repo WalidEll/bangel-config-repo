@@ -1,0 +1,54 @@
+eureka:
+ client:
+  serviceUrl:
+   defaultZone: http://localhost:8761/eureka/
+    
+server:
+ port:
+  8100
+ 
+spring:
+  ## DataSource settings:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bangel_notifications?useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+    ## DevTools Proprieties
+    #spring.devtools.restart.enabled=false
+    #spring.devtools.livereload.enabled=false
+    testWhileIdle:
+      true
+    timeBetweenEvictionRunsMillis:
+      60000
+    validationQuery:
+      SELECT 1
+    ## Specify the DBMS
+  jpa:
+    database: MYSQL
+    ## Show log for each sql query
+    show-sql: true
+    ## Hibernate ddl auto (create, create-drop, update) create DB if doesn't exist
+    hibernate:
+      ddl-auto: update
+    ## Naming strategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+mail-service:
+  ribbon:
+    readTimeout: 300000
+ ## Configuration of RabbitMQ
+queue:
+  name:
+    messagequeue
+fanout:
+  exchange:
+    messagequeue-exchange
+
