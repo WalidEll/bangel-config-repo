@@ -14,8 +14,8 @@ core:
 spring:
   ## DataSource settings:
   datasource:
-    url: "jdbc:mysql://localhost:3306/bangel_messages?useLegacyDatetimeCode=false&serverTimezone=UTC"
-    username: "root"
+    url: jdbc:mysql://localhost:3306/bangel_messages?useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
     password: root
     driverClassName:  com.mysql.cj.jdbc.Driver
     ## DevTools Proprieties
