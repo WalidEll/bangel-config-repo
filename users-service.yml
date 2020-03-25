@@ -3,7 +3,7 @@ spring:
     url: jdbc:mysql://localhost:3306/bangel_users?useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: root
-    driverClassName: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     tomcat:
       test-while-idle: true
       time-between-eviction-runs-millis: 60000
