@@ -20,12 +20,6 @@ zuul:
       strip-prefix: false
       sensitiveHeaders: Cookie,Set-Cookie,Authorization
       
-    #eureka-server:
-      #path: /eureka/**
-      #service-id: eureka-service
-      #url: http://localhost:8761
-      #sensitiveHeaders: Set-Cookie,Authorization
-
     users-service:
       path: /users/**
       service-id: users-service
