@@ -23,7 +23,7 @@ spring:
   flyway:
     user: root
     password:
-    url: jdbc:mysql://localhost:3306/mysql
+    url: jdbc:mysql://localhost:3306/mysql?useLegacyDatetimeCode=false&serverTimezone=UTC
     schemas: bangel_users
     baseline-on-migrate: true
 
