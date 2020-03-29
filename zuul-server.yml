@@ -11,6 +11,14 @@ eureka:
 ribbon:
   ReadTimeout: 20000
   ConnectTimeout: 20000
+  
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 600000
 
 zuul:
   routes:
