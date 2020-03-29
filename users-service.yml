@@ -24,6 +24,7 @@ spring:
     user: root
     password:
     url: jdbc:mysql://localhost:3306/mysql?useLegacyDatetimeCode=false&serverTimezone=UTC
+    driverClassName: com.mysql.cj.jdbc.Driver
     schemas: bangel_users
     baseline-on-migrate: true
 
