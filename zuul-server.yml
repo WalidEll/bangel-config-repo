@@ -15,8 +15,8 @@ ribbon:
 zuul:
   routes:
     auth-service:
-      path: /auth/**
-      service-id: auth-service
+      path: /api/auth/**
+      service-id: users-service
       strip-prefix: false
       sensitiveHeaders: Cookie,Set-Cookie,Authorization
       
